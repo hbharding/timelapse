@@ -1,0 +1,22 @@
+{
+  "name": "timelapse",
+  "version": "0.0.0",
+  "description": "This app creates timelapses of photos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbharding/timelapse.git"
+  },
+  "author": "Henry Harding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbharding/timelapse/issues"
+  },
+  "homepage": "https://github.com/hbharding/timelapse",
+  "dependencies": {
+    "express": "~3.4.8"
+  }
+}
