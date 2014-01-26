@@ -1,0 +1,44 @@
+$headerHeight: 60px;
+
+#header {
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	// width: 100%;
+
+	nav {
+		float: right;
+	}
+
+	nav {
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;		
+			}
+			li {
+				color: #fff;
+				font-size: 1em;
+				display: inline-block;
+				margin: 0em .5em;
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				color: #fff;
+				border: 1px solid #fff;
+				padding: .6em 1em;
+				border-radius: 6px;
+				opacity: .5;
+				@include transition(opacity .3s ease-in);
+
+				&:hover, {
+					opacity: 1;
+				}
+			}
+			li.active a {
+				opacity: 1;
+			}
+		
+	}
+}

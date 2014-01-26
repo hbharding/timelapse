@@ -1,3 +1,5 @@
+// load the todo model
+// var Todo = require('./models/todo');
 
 module.exports = function(app) {
 
@@ -24,7 +26,7 @@ module.exports = function(app) {
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
-		res.sendfile('./public/views/index.html'); // load our public/views/index.html file
+		res.sendfile('./public/index.html');
 	});
 };
 

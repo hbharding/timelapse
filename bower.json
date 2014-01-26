@@ -1,0 +1,27 @@
+{
+  "name": "timelapse",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hbharding/timelapse",
+  "authors": [
+    "Henry Harding"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "angular": "~1.2.10",
+    "angular-route": "~1.2.10",
+    "sass-bootstrap": "~3.0.2",
+    "angular-animate": "~1.2.10",
+    "angular-resource": "~1.2.10",
+    "angular-sanitize": "~1.2.10"
+  }
+}

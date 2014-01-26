@@ -1,22 +1,31 @@
 {
   "name": "timelapse",
+  "private": true,
   "version": "0.0.0",
   "description": "This app creates timelapses of photos",
-  "main": "server.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "mongoose": "~3.8.5"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-express-server": "~0.4.11",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-concurrent": "~0.4.3",
+    "grunt-shell": "~0.6.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "server.js",
+  "author": "Henry Harding",
+  "homepage": "https://github.com/hbharding/timelapse",
   "repository": {
     "type": "git",
     "url": "https://github.com/hbharding/timelapse.git"
   },
-  "author": "Henry Harding",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/hbharding/timelapse/issues"
-  },
-  "homepage": "https://github.com/hbharding/timelapse",
-  "dependencies": {
-    "express": "~3.4.8"
   }
 }

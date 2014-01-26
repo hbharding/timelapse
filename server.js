@@ -2,14 +2,12 @@
 var express  = require('express');
 var app      = express();
 var mongoose = require('mongoose');
+var port = process.env.PORT || 8080;
+var database = require('./config/database');
 
 // configuration ===========================================
-	
-// config files
-var db = require('./config/db');
 
-var port = process.env.PORT || 8080; // set our port
-// mongoose.connect(db.url); // connect to our mongoDB database (uncomment after you enter in your own credentials in config/db.js)
+mongoose.connect(database.url);
 
 app.configure(function() {
 	app.use(express.static(__dirname + '/public')); 	// set the static files location /public/img will be /img for users
@@ -23,5 +21,5 @@ require('./app/routes')(app); // configure our routes
 
 // start app ===============================================
 app.listen(port);										// startup our app at http://localhost:8080
-console.log('Magic happens on port ' + port); 			// shoutout to the user
-exports = module.exports = app; 						// expose app
+console.log('App listening on port ' + port);
+// exports = module.exports = app; 						// expose app
